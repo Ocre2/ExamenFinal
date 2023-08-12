@@ -8,11 +8,11 @@ namespace ExamenFinal
 {
     public class Libro
     {
-        public string Titulo { get; set; }
-        public string ISBN { get; set; }
-        public string Autor { get; set; }
-        public Decimal PrecioUnitario { get; set; }
-        public int Stock { get; set; }
+        public string Titulo { get; private set; }
+        public string ISBN { get; private set; }
+        public string Autor { get; private set; }
+        public Decimal PrecioUnitario { get; private set; }
+        public int Stock { get; private set; }
 
         public  Libro(string titulo, string isbn, string autor, decimal precioUnitario, int stock)
         {
